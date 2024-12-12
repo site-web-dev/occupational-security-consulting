@@ -3,26 +3,26 @@ import ComponentContainer from "@/app/component/component-container"
 import PageContainer from "@/app/component/page-container"
 import { Button } from "@/components/ui/button"
 import { menu, redesSociales } from "@/data/contenido"
-import { MenuIcon, ShoppingCart } from "lucide-react"
+import { MenuIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const NavbarMenu=()=>{
     const [openMenuMobile, setOpenMenuMobile] = useState(false)
     const openMobile=()=>{setOpenMenuMobile(!openMenuMobile)}
-    const [scrollY, setScrollY] = useState(0)
+    //const [scrollY, setScrollY] = useState(0)
 
 
-  const eventoSroll = ()=>{
+  /*const eventoSroll = ()=>{
     const position = window.pageYOffset;
     setScrollY(position)
-  } 
+  } */
 
-  useEffect(() => {
+  /*useEffect(() => {
     window.addEventListener("scroll", eventoSroll)
     //console.log(scrollY)
-  })
+  })*/
     return(
     <PageContainer className="bg-slate-300" >
       <ComponentContainer className={``}>
